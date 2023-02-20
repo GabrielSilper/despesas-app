@@ -48,12 +48,13 @@ A cada sprint vai ser criado um quadro no Trello para mostrat o objetivo do requ
 
 ### RF01 - Fazer Login.
 
-- Criar um página de login, usará a rota "/" da aplicação, somente um nome válido para entrar e salvar no estado global.
+- Criar um página de login, usará a rota "/" da aplicação, somente um nome válido para entrar e salvar o nome no estado global.
 
 [Trello - Quadro RF01] - adicionar link do quadro.
 
 ## Estilização da aplicação.
 
+- Aplicação responsiva - Mobile First;
 - Usar Styled Components;
 - Paleta de cores
     - Cor primária: Roxo estilo nubank;
