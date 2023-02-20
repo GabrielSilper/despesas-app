@@ -45,6 +45,8 @@ A cada sprint vai ser criado um quadro no Trello para mostrat o objetivo do requ
 
 - Uso do Kanban usando a plataforma Trello.
 - Para cada Requesito Funcional será criado um novo quadro.
+- Estudar e usar o paradigma de programação funcional - Nubank;
+- Aplicar o TDD sempre que possível;
 
 ### RF01 - Fazer Login.
 
