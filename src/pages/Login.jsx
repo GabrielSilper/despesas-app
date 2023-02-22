@@ -1,8 +1,11 @@
 import React from 'react';
+import FormLogin from '../components/FormLogin';
 
 function Login() {
   return (
-    <div>Login</div>
+    <div className="Login">
+      <FormLogin />
+    </div>
   );
 }
 
