@@ -52,7 +52,7 @@ A cada sprint vai ser criado um quadro no Trello para mostrat o objetivo do requ
 
 - Criar um página de login, usará a rota "/" da aplicação, somente um nome válido para entrar e salvar o nome no estado global.
 
-[Trello - Quadro RF01] - adicionar link do quadro.
+[Trello - Quadro RF01](https://trello.com/b/idB5IFTr/rf-01)
 
 ## Estilização da aplicação.
 
