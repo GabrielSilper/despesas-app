@@ -62,6 +62,8 @@ A cada sprint vai ser criado um quadro no Trello para mostrar o objetivo do requ
 - Criar um botào para adicionar a despesa na aplicação (adicionar no estado);
 - Criar testes (vai ficar em stand by, pois preciso aprender RTL com Context API);
 
+[Trello - Quadro RF02](https://trello.com/b/C1CqAX5e/rf-02)
+
 ## Estilização da aplicação.
 
 - Aplicação responsiva - Mobile First;
