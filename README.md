@@ -6,7 +6,7 @@ E após concluir o projeto TrybeWallet, me surgiu a ideia de mudar um pouco o fu
 
 Eu vou levantar os requisitos funcionais, planejar como vão funcionar e criar um sprint pra cada requisito.
 
-A cada sprint vai ser criado um quadro no Trello para mostrat o objetivo do requisito, brainstorm de ideias, filtrar as melhores, seguir com um planejamento para atingir o objetivo, testar, e fazer um levatamento do que foi bom e ruim para melhorar os próximos sprints e seguir com uma ideia coesa pra todos os requisitos.
+A cada sprint vai ser criado um quadro no Trello para mostrar o objetivo do requisito, brainstorm de ideias, filtrar as melhores, seguir com um planejamento para atingir o objetivo, testar, e fazer um levatamento do que foi bom e ruim para melhorar os próximos sprints e seguir com uma ideia coesa pra todos os requisitos.
 
 ## Tecnologias que pretendo usar:
 
@@ -33,6 +33,7 @@ A cada sprint vai ser criado um quadro no Trello para mostrat o objetivo do requ
 
 1. Fazer Login - somente nome;
 1. Adicionar Despesas;
+1. Mostrar "extrato" de despesas;
 1. Excluir Despesas;
 1. Editar Despesas;
 1. Calcular total de Despesas;
@@ -54,13 +55,20 @@ A cada sprint vai ser criado um quadro no Trello para mostrat o objetivo do requ
 
 [Trello - Quadro RF01](https://trello.com/b/idB5IFTr/rf-01)
 
+### RF02 - Adicionar Despesas.
+
+- Criar uma chave `expenses` no context da aplicação, será uma lista de objetos;
+- Criar um formulário para preencher as informaçòes.
+- Criar um botào para adicionar a despesa na aplicação (adicionar no estado);
+- Criar testes (vai ficar em stand by, pois preciso aprender RTL com Context API);
+
 ## Estilização da aplicação.
 
 - Aplicação responsiva - Mobile First;
 - Usar Styled Components;
 - Paleta de cores
     - Cor primária: Roxo estilo nubank;
-    - Cor Secundária:  Branco;
-    - Cor de Fundo:  Cinza bem escuro;
+    - Cor Secundária: Branco;
+    - Cor de Fundo: Cinza bem escuro;
     - _Outras cores conforme o andamento_ ;
 - Pedir ajuda para colegas com criatividades e efeitos;
