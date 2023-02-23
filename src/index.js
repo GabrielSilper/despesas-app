@@ -6,11 +6,11 @@ import ExpenseProvider from './context/ExpenseProvider';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  // <React.StrictMode>
-  <ExpenseProvider>
-    <BrowserRouter>
-      <App />
-    </BrowserRouter>
-  </ExpenseProvider>,
-  // </React.StrictMode>,
+  <React.StrictMode>
+    <ExpenseProvider>
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
+    </ExpenseProvider>
+  </React.StrictMode>,
 );
