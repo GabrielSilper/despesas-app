@@ -17,7 +17,7 @@ function FormLogin() {
 
   const handleClick = () => {
     setFullName(loginName);
-    history.push('/despesas');
+    history.push('/expenses');
   };
 
   return (
