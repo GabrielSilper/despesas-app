@@ -4,8 +4,12 @@ import ExpenseContext from './ExpenseContext';
 
 function ExpenseProvider({ children }) {
   const [fullName, setFullName] = useState('Faça Login');
+  const [expenses, setExpenses] = useState([]);
 
-  const values = useMemo(() => ({ fullName, setFullName }), [fullName]);
+  const values = useMemo(
+    () => ({ fullName, setFullName, expenses, setExpenses }),
+    [fullName, expenses],
+  );
 
   return (
     <ExpenseContext.Provider value={ values }>{children}</ExpenseContext.Provider>
