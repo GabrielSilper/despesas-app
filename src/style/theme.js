@@ -5,7 +5,8 @@ const theme = {
     secondary: '#F9F3FC',
   },
   width: {
-    mobileAndTablet: '768px',
+    mobileAndTablet: '520px',
+    inputOnMobile: "200px"
   },
 };
 

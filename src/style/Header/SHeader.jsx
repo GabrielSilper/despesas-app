@@ -14,6 +14,7 @@ const SHeader = styled.header`
     padding: 8px 0px;
     font-weight: 600;
     display: flex;
+    color: ${({ theme }) => theme.colors.secondary};
   }
 
   @media screen and (min-width: ${({ theme }) => theme.width.mobileAndTablet}) {

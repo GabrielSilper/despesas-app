@@ -1,5 +1,7 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
-const SelectType = styled.select``;
+const SelectType = styled.select`
+  width: ${({ theme }) => theme.width.inputOnMobile};
+`;
 
 export default SelectType;
