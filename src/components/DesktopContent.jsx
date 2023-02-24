@@ -1,5 +1,5 @@
 import React from 'react';
-import WrapperDesktop from '../style/WrapperDesktop';
+import WrapperDesktop from '../style/Wrapper/WrapperDesktop';
 
 function DesktopContent() {
   return (

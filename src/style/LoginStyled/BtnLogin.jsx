@@ -4,7 +4,7 @@ const BtnLogin = styled.button`
   background-color: ${({ theme }) => theme.colors.primary};
   border: none;
   color: ${({ theme }) => theme.colors.secondary};
-  font-size: 2.5vw;
+  font-size: 3vw;
   padding: 5px 10px;
   width: 20vw;
   font-weight: 500;

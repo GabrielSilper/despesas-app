@@ -1,12 +1,12 @@
 import React, { useContext, useEffect, useState } from 'react';
 import currentDate from '../constants/currentDate';
 import ExpenseContext from '../context/ExpenseContext';
-import { BtnAddExpense } from '../style/BtnAddExpese';
-import { DescriptionArea } from '../style/DescriptionArea';
-import { InputInfos } from '../style/InputInfos';
-import { LabelInfos } from '../style/LabelInfos';
-import { SelectType } from '../style/SelectType';
-import { SFormExpense } from '../style/SFormExpenses';
+import BtnAddExpense from '../style/ExpenseStyled/BtnAddExpese';
+import InputInfos from '../style/ExpenseStyled/InputInfos';
+import LabelInfos from '../style/ExpenseStyled/LabelInfos';
+import SelectType from '../style/ExpenseStyled/SelectType';
+import SFormExpense from '../style/ExpenseStyled/SFormExpenses';
+import DescriptionArea from '../style/LoginStyled/DescriptionArea';
 
 function FormExpenses() {
   const randomId = (() => {

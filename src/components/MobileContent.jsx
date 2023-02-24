@@ -1,5 +1,5 @@
 import React from 'react';
-import WrapperMobile from '../style/WrapperMobile';
+import WrapperMobile from '../style/Wrapper/WrapperMobile';
 
 function MobileContent() {
   return (
