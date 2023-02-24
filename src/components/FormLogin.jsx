@@ -1,10 +1,11 @@
 import React, { useState, useContext } from 'react';
 import { useHistory } from 'react-router-dom';
+import { GiTwoCoins } from 'react-icons/gi';
 import ExpenseContext from '../context/ExpenseContext';
-import { BtnEntrar } from '../style/BtnEntrar';
-import { InputNameLogin } from '../style/InputNameLogin';
-import { LabelLogin } from '../style/LabelLogin';
-import { SFormLogin } from '../style/SFormLogin';
+import BtnLogin from '../style/LoginStyled/BtnLogin';
+import InputNameLogin from '../style/LoginStyled/InputNameLogin';
+import LabelLogin from '../style/LoginStyled/LabelLogin';
+import SFormLogin from '../style/LoginStyled/SFormLogin';
 
 function FormLogin() {
   const [loginName, setLoginName] = useState('');
@@ -23,16 +24,20 @@ function FormLogin() {
   return (
     <SFormLogin>
       <LabelLogin htmlFor="input-name-login">
-        Nome
+        <span>
+          Despesas App
+          <GiTwoCoins />
+        </span>
         <InputNameLogin
           id="input-name-login"
           value={ loginName }
           onChange={ handleChange }
+          placeholder="Nome..."
         />
       </LabelLogin>
-      <BtnEntrar type="button" onClick={ handleClick }>
+      <BtnLogin type="button" onClick={ handleClick }>
         Entrar
-      </BtnEntrar>
+      </BtnLogin>
     </SFormLogin>
   );
 }

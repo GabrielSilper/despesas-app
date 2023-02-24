@@ -1,4 +1,5 @@
 import React, { useContext, useEffect, useState } from 'react';
+import currentDate from '../constants/currentDate';
 import ExpenseContext from '../context/ExpenseContext';
 import { BtnAddExpense } from '../style/BtnAddExpese';
 import { DescriptionArea } from '../style/DescriptionArea';
@@ -16,20 +17,6 @@ function FormExpenses() {
     return `${part1}-${part2}`;
   })();
 
-  const currentDate = Date.now();
-  const today = new Date(currentDate);
-
-  const formattedDate = (date) => {
-    const numFormat = { date: 10, month: 8 };
-    const dd = date.getDate() > numFormat.date ? date.getDate() : `0${date.getDate()}`;
-    const mm = date.getMonth() > numFormat.month
-      ? date.getMonth() + 1
-      : `0${date.getMonth() + 1}`;
-    const yy = date.getFullYear();
-
-    return `${yy}-${mm}-${dd}`;
-  };
-
   const { expenses, setExpenses } = useContext(ExpenseContext);
   const [btnIsDisabled, setBtnIsDisabled] = useState(true);
   const [expense, setExpense] = useState({
@@ -38,22 +25,15 @@ function FormExpenses() {
     type: '',
     description: '',
     value: '',
-    date: formattedDate(today),
+    date: currentDate,
   });
+  const { name, type, value } = expense;
 
-  const handleChange = ({ target: { name, value } }) => {
+  const handleChange = ({ target: { name: inputName, value: inputValue } }) => {
     setExpense({
       ...expense,
-      [name]: value,
+      [inputName]: inputValue,
     });
-  };
-
-  const verifyExpense = () => {
-    const { name, type, value } = expense;
-    const nameOk = name.length < 2;
-    const typeOk = type.length === 0;
-    const valueOk = value === '0' || value === '';
-    setBtnIsDisabled(nameOk || typeOk || valueOk);
   };
 
   const handleClick = () => {
@@ -64,13 +44,17 @@ function FormExpenses() {
       type: '',
       description: '',
       value: '',
-      date: formattedDate(today),
+      date: currentDate,
     });
   };
 
+  // this useEffect is validating my button BtnAddExpense
   useEffect(() => {
-    verifyExpense();
-  }, [expense.name, expense.type, expense.value]);
+    const nameOk = name.length < 2;
+    const typeOk = type.length === 0;
+    const valueOk = value === '0' || value === '';
+    setBtnIsDisabled(nameOk || typeOk || valueOk);
+  }, [name, type, value]);
 
   return (
     <SFormExpense>
@@ -80,12 +64,12 @@ function FormExpenses() {
           type="text"
           name="name"
           onChange={ handleChange }
-          value={ expense.name }
+          value={ name }
         />
       </LabelInfos>
       <LabelInfos htmlFor="">
         Tipo
-        <SelectType name="type" onChange={ handleChange } value={ expense.type }>
+        <SelectType name="type" onChange={ handleChange } value={ type }>
           <option value="">Selecione</option>
           <option value="Conta">Conta</option>
           <option value="Trabalho">Trabalho</option>
@@ -109,7 +93,7 @@ function FormExpenses() {
           min={ 0 }
           name="value"
           onChange={ handleChange }
-          value={ expense.value }
+          value={ value }
         />
       </LabelInfos>
       <LabelInfos htmlFor="">

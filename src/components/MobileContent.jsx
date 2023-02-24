@@ -1,11 +1,11 @@
 import React from 'react';
-import WrapprMobile from '../style/WrapperMobile';
+import WrapperMobile from '../style/WrapperMobile';
 
 function MobileContent() {
   return (
-    <WrapprMobile>
+    <WrapperMobile>
       Mobile Content.
-    </WrapprMobile>
+    </WrapperMobile>
   );
 }
 

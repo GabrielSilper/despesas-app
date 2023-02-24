@@ -1,11 +1,12 @@
 import styled from 'styled-components';
 
-const WrapprMobile = styled.div`
-  display: none;
+const WrapperMobile = styled.div`
+  display: block;
+  border: 2px solid;
 
-  @media screen and (max-width: 415px) {
-    display: block;
+  @media screen and (min-width: ${({ theme }) => theme.width.mobileAndTablet}) {
+    display: none;
   }
 `;
 
-export default WrapprMobile;
+export default WrapperMobile;

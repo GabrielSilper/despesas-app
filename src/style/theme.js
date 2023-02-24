@@ -4,6 +4,9 @@ const theme = {
     primary: '#61188B',
     secondary: '#F9F3FC',
   },
+  width: {
+    mobileAndTablet: '768px',
+  },
 };
 
 export default theme;

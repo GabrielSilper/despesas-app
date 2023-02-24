@@ -1,9 +1,12 @@
 import styled from 'styled-components';
 
 const WrapperDesktop = styled.div`
-    @media screen and (max-width:415px) {
-        display: none;
-    }
+  display: none;
+
+  @media screen and (min-width: ${({ theme }) => theme.width.mobileAndTablet}) {
+    display: block;
+    border: 2px solid;
+  }
 `;
 
 export default WrapperDesktop;
