@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 const InputNameLogin = styled.input`
   padding: 5px 10px;
@@ -7,6 +7,11 @@ const InputNameLogin = styled.input`
   font-size: 3vw;
   border: none;
   border-radius: 8px;
+  border: 2px solid ${({ theme }) => theme.colors.primary};
+
+  & :focus {
+    border: 2px solid ${({ theme }) => theme.colors.primary};
+  }
 
   @media screen and (min-width: ${({ theme }) => theme.width.mobileAndTablet}) {
     width: 400px;

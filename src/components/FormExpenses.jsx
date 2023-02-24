@@ -2,11 +2,11 @@ import React, { useContext, useEffect, useState } from 'react';
 import currentDate from '../constants/currentDate';
 import ExpenseContext from '../context/ExpenseContext';
 import BtnAddExpense from '../style/ExpenseStyled/BtnAddExpese';
+import DescriptionArea from '../style/ExpenseStyled/DescriptionArea';
 import InputInfos from '../style/ExpenseStyled/InputInfos';
 import LabelInfos from '../style/ExpenseStyled/LabelInfos';
 import SelectType from '../style/ExpenseStyled/SelectType';
 import SFormExpense from '../style/ExpenseStyled/SFormExpenses';
-import DescriptionArea from '../style/LoginStyled/DescriptionArea';
 
 function FormExpenses() {
   const randomId = (() => {
@@ -59,7 +59,7 @@ function FormExpenses() {
   return (
     <SFormExpense>
       <LabelInfos htmlFor="">
-        Nome da despesa
+        <span>Nome da despesa</span>
         <InputInfos
           type="text"
           name="name"
@@ -68,7 +68,7 @@ function FormExpenses() {
         />
       </LabelInfos>
       <LabelInfos htmlFor="">
-        Tipo
+        <span>Tipo</span>
         <SelectType name="type" onChange={ handleChange } value={ type }>
           <option value="">Selecione</option>
           <option value="Conta">Conta</option>
@@ -79,7 +79,7 @@ function FormExpenses() {
         </SelectType>
       </LabelInfos>
       <LabelInfos htmlFor="">
-        Descrição
+        <span>Descrição</span>
         <DescriptionArea
           name="description"
           onChange={ handleChange }
@@ -87,7 +87,7 @@ function FormExpenses() {
         />
       </LabelInfos>
       <LabelInfos htmlFor="">
-        Valor
+        <span>Valor</span>
         <InputInfos
           type="number"
           min={ 0 }
@@ -97,7 +97,7 @@ function FormExpenses() {
         />
       </LabelInfos>
       <LabelInfos htmlFor="">
-        Data da despesa
+        <span>Data da despesa</span>
         <InputInfos
           type="date"
           name="date"

@@ -1,7 +1,7 @@
 const theme = {
   colors: {
-    background: '#1C2833',
-    primary: '#61188B',
+    background: '#d6e1f4',
+    primary: '#2158b4',
     secondary: '#F9F3FC',
   },
   width: {
