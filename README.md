@@ -1,12 +1,10 @@
 # Despesas App
 
-Sempre gostei de calcular minhas despesas para que não houvesse surpresas no fim do mês e está sempre de acordo com o orçamento.
+Sempre gostei de calcular minhas despesas para que não houvesse surpresas no fim do mês e controlar meus gastos.
 
 E após concluir o projeto TrybeWallet, me surgiu a ideia de mudar um pouco o funcionamento do projeto, reiniciar do zero tudo, e simular um planejamento de projeto como fiz em um projeto chamado de Company App que está em andamento.
 
-Eu vou levantar os requisitos funcionais, planejar como vão funcionar e criar um sprint pra cada requisito.
-
-A cada sprint vai ser criado um quadro no Trello para mostrar o objetivo do requisito, brainstorm de ideias, filtrar as melhores, seguir com um planejamento para atingir o objetivo, testar, e fazer um levatamento do que foi bom e ruim para melhorar os próximos sprints e seguir com uma ideia coesa pra todos os requisitos.
+Eu vou levantar os requisitos funcionais, fazer brainstorm de ideias, criar um quadro Kanban e fazer "sprints".
 
 ## Tecnologias que pretendo usar:
 
@@ -18,9 +16,13 @@ A cada sprint vai ser criado um quadro no Trello para mostrar o objetivo do requ
 1. Styled Components;
 1. _Outros conforme a necessidade_ ;
 
-## Objetos:
+## Objetos e Atores da aplicação:
 
-### 1. Despesa
+### 1. Usuário
+
+- Nome - `string`;
+
+### 2. Despesa
 
 - ID - gerado automaticamente - `string`;
 - Nome da Despesa - `string`;
@@ -53,23 +55,23 @@ A cada sprint vai ser criado um quadro no Trello para mostrar o objetivo do requ
 
 [Quadro da aplicação](https://www.google.com/)
 
-### RF01 - Fazer Login.
+### RF01 - Fazer Login
 
-- O que é preciso pra atingir o objetivo do Requisito:
+- O que é preciso pra atingir o objetivo do requisito:
     - Criar uma página de Login;
     - Usar a rota "/" da aplição;
     - Usar somente nome para fazer Login;
     - Criar uma chave `name` no context da aplicação;
     - Criar um botão para entrar;
 
-### RF02 - Adicionar Despesas.
+### RF02 - Adicionar Despesas
 
-- O que é preciso pra atingir o objetivo do Requisito:
+- O que é preciso pra atingir o objetivo do requisito:
     - Criar uma chave `expenses` no context da aplicação, será uma lista de objetos;
     - Criar um formulário para preencher as informaçòes.
     - Criar um botão para adicionar a despesa na aplicação (adicionar como valor da chave `expenses`);
 
-## Estilização da aplicação.
+## Estilização da aplicação
 
 - Aplicação responsiva - Mobile First;
 - Criar conjunto de componentes para cada tela diferente;
@@ -81,10 +83,18 @@ A cada sprint vai ser criado um quadro no Trello para mostrar o objetivo do requ
     - _Outras cores conforme o andamento_ ;
 - Pedir ajuda para colegas com criatividades e efeitos;
 
-## Wireframes.
+## Wireframes
 
 <details>
-<summary>Imagens dos Wireframes</summary>
-<br>
-imagens...
+<summary>Wireframe para telas pequenas</summary>
+    
+![wireframe tela pequena](./wireframes/SmallWireframe.png)
+    
+</details>
+
+<details>
+<summary>Wireframe para telas desktop</summary>
+    
+![wireframe tela desktop](./wireframes/DesktopWireframe.png)
+    
 </details>
