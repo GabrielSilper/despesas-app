@@ -1,13 +1,13 @@
-import React from 'react'
-import WrapperDesktop from '../style/DesktopExpensesForm/WrapperDesktop'
-import DesktopExpenseForm from './DesktopExpenseForm'
+import React from 'react';
+import WrapperDesktop from '../style/DesktopExpensesForm/WrapperDesktop';
+import DesktopExpenseForm from './DesktopExpenseForm';
 
 function DesktopContent() {
   return (
     <WrapperDesktop>
-        <DesktopExpenseForm />
+      <DesktopExpenseForm />
     </WrapperDesktop>
-  )
+  );
 }
 
-export default DesktopContent
+export default DesktopContent;
