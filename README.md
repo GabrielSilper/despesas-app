@@ -16,6 +16,7 @@ A cada sprint vai ser criado um quadro no Trello para mostrar o objetivo do requ
 1. React Icons;
 1. React Router;
 1. Styled Components;
+1. _Outros conforme a necessidade_ ;
 
 ## Objetos:
 
@@ -42,35 +43,48 @@ A cada sprint vai ser criado um quadro no Trello para mostrar o objetivo do requ
 1. Salvar no LocalStorage - ainda não aprendi arquitetar um DB;
 1. _Outros conforme surge ideias_ ;
 
-## Metodologia
+## Metodologia e estudos
 
-- Uso do Kanban usando a plataforma Trello.
-- Para cada Requesito Funcional será criado um novo quadro.
-- Estudar e usar o paradigma de programação funcional - Nubank;
-- Aplicar o TDD sempre que possível;
+- Uso do Kanban usando a plataforma Trello para organização;
+- Para cada Requesito Funcional será feito brainstorm de ideias;
+- Filtrar as melhores ideias e criar tasks referentes no Quadro;
+- Estudar e usar o paradigma de programação funcional;
+- Aprender Jest com uso do Context API;
+
+[Quadro da aplicação](https://www.google.com/)
 
 ### RF01 - Fazer Login.
 
-- Criar um página de login, usará a rota "/" da aplicação, somente um nome válido para entrar e salvar o nome no estado global.
-
-[Trello - Quadro RF01](https://trello.com/b/idB5IFTr/rf-01)
+- O que é preciso pra atingir o objetivo do Requisito:
+    - Criar uma página de Login;
+    - Usar a rota "/" da aplição;
+    - Usar somente nome para fazer Login;
+    - Criar uma chave `name` no context da aplicação;
+    - Criar um botão para entrar;
 
 ### RF02 - Adicionar Despesas.
 
-- Criar uma chave `expenses` no context da aplicação, será uma lista de objetos;
-- Criar um formulário para preencher as informaçòes.
-- Criar um botào para adicionar a despesa na aplicação (adicionar no estado);
-- Criar testes (vai ficar em stand by, pois preciso aprender RTL com Context API);
-
-[Trello - Quadro RF02](https://trello.com/b/C1CqAX5e/rf-02)
+- O que é preciso pra atingir o objetivo do Requisito:
+    - Criar uma chave `expenses` no context da aplicação, será uma lista de objetos;
+    - Criar um formulário para preencher as informaçòes.
+    - Criar um botão para adicionar a despesa na aplicação (adicionar como valor da chave `expenses`);
 
 ## Estilização da aplicação.
 
 - Aplicação responsiva - Mobile First;
+- Criar conjunto de componentes para cada tela diferente;
 - Usar Styled Components;
 - Paleta de cores
-    - Cor primária: Roxo estilo nubank;
-    - Cor Secundária: Branco;
-    - Cor de Fundo: Cinza bem escuro;
+    - Cor primária: #6D3278;
+    - Cor Secundária: #F9F3FC;
+    - Cor de Fundo: #F9F3FC;
     - _Outras cores conforme o andamento_ ;
 - Pedir ajuda para colegas com criatividades e efeitos;
+
+## Wireframes.
+
+<details>
+<summary>Imagens dos Wireframes</summary>
+<br>
+imagens...
+</details>
