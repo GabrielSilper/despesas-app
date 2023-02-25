@@ -10,6 +10,11 @@ const BtnLogin = styled.button`
   font-weight: 500;
   border-radius: 8px;
 
+  &:disabled {
+    background-color: ${({ theme }) => theme.colors.disabled1};
+    color: ${({ theme }) => theme.colors.disabled2};
+  }
+
   @media screen and (min-width: ${({ theme }) => theme.width.small}){
         width: 200px;
         font-size: 20px;

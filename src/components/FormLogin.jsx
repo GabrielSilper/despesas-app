@@ -35,7 +35,11 @@ function FormLogin() {
           placeholder="Nome..."
         />
       </LabelLogin>
-      <BtnLogin type="button" onClick={ handleClick }>
+      <BtnLogin
+        type="button"
+        onClick={ handleClick }
+        disabled={ loginName.length <= 2 }
+      >
         Entrar
       </BtnLogin>
     </SFormLogin>
