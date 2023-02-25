@@ -10,7 +10,7 @@ const LabelLogin = styled.label`
   font-weight: 700;
   color: ${({ theme }) => theme.colors.primary};
 
-  @media screen and (min-width: ${({ theme }) => theme.width.mobileAndTablet}) {
+  @media screen and (min-width: ${({ theme }) => theme.width.small}) {
     font-size: 80px;
   }
 `;

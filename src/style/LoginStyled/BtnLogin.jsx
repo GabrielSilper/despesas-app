@@ -10,7 +10,7 @@ const BtnLogin = styled.button`
   font-weight: 500;
   border-radius: 8px;
 
-  @media screen and (min-width: ${({ theme }) => theme.width.mobileAndTablet}){
+  @media screen and (min-width: ${({ theme }) => theme.width.small}){
         width: 200px;
         font-size: 20px;
     }
