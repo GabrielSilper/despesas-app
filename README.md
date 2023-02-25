@@ -53,7 +53,7 @@ Eu vou levantar os requisitos funcionais, fazer brainstorm de ideias, criar um q
 - Estudar e usar o paradigma de programação funcional;
 - Aprender Jest com uso do Context API;
 
-[Quadro da aplicação](https://www.google.com/)
+[Quadro da aplicação](https://trello.com/b/idB5IFTr)
 
 ### RF01 - Fazer Login
 
