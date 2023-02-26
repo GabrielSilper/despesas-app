@@ -1,12 +1,13 @@
 import React, { useContext } from 'react';
 import ExpenseContext from '../context/ExpenseContext';
 import WrapperButton from '../style/Button/WrapperButton';
+import WrapperList from '../style/Generics Wrappers/WrapperList';
 import WrapperMobile from '../style/MobileExpenseForm/WrapperMobile';
-import WrapperList from '../style/WrapperList';
 import BtnAddExpense from './BtnAddExpense';
 import CollapseComponent from './CollapseComponent';
 import Empty from './Empty';
 import MobileExpenseForm from './MobileExpenseForm';
+import QuantityExpense from './QuantityExpense';
 
 function MobileContent() {
   const { expenses } = useContext(ExpenseContext);
@@ -21,7 +22,16 @@ function MobileContent() {
       <WrapperButton>
         <BtnAddExpense />
       </WrapperButton>
-      <WrapperList>{isExpenseEmpty ? <Empty /> : expenseList}</WrapperList>
+      <WrapperList>
+        {isExpenseEmpty ? (
+          <Empty />
+        ) : (
+          <>
+            <QuantityExpense />
+            {expenseList}
+          </>
+        )}
+      </WrapperList>
     </WrapperMobile>
   );
 }
