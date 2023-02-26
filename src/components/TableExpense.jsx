@@ -17,25 +17,29 @@ function TableExpense() {
   ));
 
   const headerTable = (
-    <STableRow>
-      <th>Nome da Despesa</th>
-      <th>Valor</th>
-      <th>Tipo</th>
-      <th>Data</th>
-      <th>Descrição</th>
-    </STableRow>
+    <thead>
+      <STableRow>
+        <th>Nome da Despesa</th>
+        <th>Valor</th>
+        <th>Tipo</th>
+        <th>Data</th>
+        <th>Descrição</th>
+      </STableRow>
+    </thead>
   );
 
   return (
     <WrapperTable>
-      <QuantityExpense />
       {isExpensesEmpty ? (
         <Empty />
       ) : (
-        <STable>
-          {headerTable}
-          {expensesList}
-        </STable>
+        <>
+          <QuantityExpense />
+          <STable>
+            {headerTable}
+            <tbody>{expensesList}</tbody>
+          </STable>
+        </>
       )}
     </WrapperTable>
   );
