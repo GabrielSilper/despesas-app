@@ -37,6 +37,7 @@ function DesktopExpenseForm() {
           <option value="Trabalho">Trabalho</option>
           <option value="Comida">Comida</option>
           <option value="Lazer">Lazer</option>
+          <option value="Outros">Outros</option>
         </select>
       </label>
       <label>
