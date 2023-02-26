@@ -1,7 +1,6 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 const BodyCollapse = styled.div`
-
   border-bottom: 2px solid;
   border-left: 2px solid;
   border-right: 2px solid;
@@ -10,18 +9,15 @@ const BodyCollapse = styled.div`
   display: grid;
 
   grid-template-columns: 1fr 3fr;
-  grid-template-rows: 25px 3fr;
+  grid-template-rows: 30px 3fr;
 
   gap: 0px 0px;
 
   & span {
     display: flex;
-    justify-content: center;
     align-items: center;
-  }
-
-  & span:nth-child(2) {
     justify-content: start;
+    padding: 20px;
   }
 
   & span:nth-child(3) {
