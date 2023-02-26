@@ -37,10 +37,9 @@ Eu vou levantar os requisitos funcionais, fazer brainstorm de ideias, criar um q
 1. Fazer Login - somente nome;
 1. Adicionar Despesas;
 1. Mostrar "extrato" de despesas;
+1. Calcular total de Despesas;
 1. Excluir Despesas;
 1. Editar Despesas;
-1. Calcular total de Despesas;
-1. Mostrar o valor total de forma destacada;
 1. Filtrar Despesas;
 1. Salvar no LocalStorage - ainda não aprendi arquitetar um DB;
 1. _Outros conforme surge ideias_ ;
@@ -70,6 +69,16 @@ Eu vou levantar os requisitos funcionais, fazer brainstorm de ideias, criar um q
     - Criar uma chave `expenses` no context da aplicação, será uma lista de objetos;
     - Criar um formulário para preencher as informaçòes.
     - Criar um botão para adicionar a despesa na aplicação (adicionar como valor da chave `expenses`);
+    
+    
+### RF03 - Mostrar "extrato" de despesas
+
+- O que é preciso pra atingir o objetivo do requisito:
+    - Renderizar as despesas (coletar da chaves expense);
+    - No mobile mostrar um lista de componentes de conteúdo expansível para cada despesa;
+    - No desktop mostrar uma tabela com as despesas;
+    
+    [Quadro do RF03](https://trello.com/b/As4g7nbf)
 
 ## Estilização da aplicação
 
