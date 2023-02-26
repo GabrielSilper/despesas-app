@@ -8,6 +8,7 @@ const theme = {
   },
   width: {
     small: '720px',
+    collapseWidth: '200px',
   },
 };
 

@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import React, { useCallback, useMemo, useState } from 'react';
-import currentDate from '../constants/currentDate';
+import currentDate from '../helpers/currentDate';
 import ExpenseContext from './ExpenseContext';
 
 function ExpenseProvider({ children }) {
