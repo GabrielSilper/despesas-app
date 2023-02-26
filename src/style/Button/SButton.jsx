@@ -20,6 +20,11 @@ const SButton = styled.button`
     padding-top: 4px;
   }
 
+  &:disabled {
+    background-color: ${({ theme }) => theme.colors.disabled1};
+    color: ${({ theme }) => theme.colors.disabled2};
+  }
+
   @media screen and (min-width: ${({ theme }) => theme.width.small}) {
     padding: 8px 35px;
     height: 40px;
