@@ -4,8 +4,8 @@ import SButton from '../style/Button/SButton';
 
 function BtnAddExpense() {
   return (
-    <SButton>
-      <span><AiOutlinePlusCircle size={20}/></span>
+    <SButton type='button'>
+      <span><AiOutlinePlusCircle size={ 20 } /></span>
       <span>Adicionar</span>
     </SButton>
   );

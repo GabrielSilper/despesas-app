@@ -1,11 +1,11 @@
 import React from 'react';
+import WrapperButton from '../style/Button/WrapperButton';
 import SDForm from '../style/DesktopExpensesForm/SDForm';
 import BtnAddExpense from './BtnAddExpense';
 
 function DesktopExpenseForm() {
   return (
     <SDForm>
-      <div />
       <label htmlFor="">
         <span>Nome da Despesa</span>
         <input type="text" />
@@ -33,7 +33,9 @@ function DesktopExpenseForm() {
         <span>Descrição</span>
         <textarea />
       </label>
-      <BtnAddExpense />
+      <WrapperButton>
+        <BtnAddExpense />
+      </WrapperButton>
     </SDForm>
   );
 }

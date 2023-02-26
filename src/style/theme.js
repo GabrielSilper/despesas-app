@@ -7,7 +7,7 @@ const theme = {
     disabled2: '#BCBCBC',
   },
   width: {
-    small: '768px',
+    small: '720px',
   },
 };
 
