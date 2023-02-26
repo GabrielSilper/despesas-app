@@ -46,7 +46,8 @@ Eu vou levantar os requisitos funcionais, fazer brainstorm de ideias, criar um q
 
 ## Metodologia e estudos
 
-- Uso do Kanban usando a plataforma Asana para organização;
+- Uso do Kanban usando a plataforma Trello para organização;
+- Usar um quadro pra cada Requisito Funcional;
 - Para cada Requesito Funcional será feito brainstorm de ideias;
 - Filtrar as melhores ideias e criar tasks referentes no Quadro;
 - Estudar e usar o paradigma de programação funcional;
