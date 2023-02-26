@@ -1,6 +1,8 @@
 const randomId = (() => {
-  const part1 = Math.random().toString(16).substring(8);
-  const part2 = Math.random().toString(16).substring(8);
+  const hex = 16;
+  const cut = 8;
+  const part1 = Math.random().toString(hex).substring(cut);
+  const part2 = Math.random().toString(hex).substring(cut);
   return `${part1}-${part2}`;
 })();
 

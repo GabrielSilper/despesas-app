@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 const BodyCollapse = styled.div`
   border: 2px solid black;
