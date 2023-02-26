@@ -37,10 +37,10 @@ Eu vou levantar os requisitos funcionais, fazer brainstorm de ideias, criar um q
 1. Fazer Login - somente nome;
 1. Adicionar Despesas;
 1. Mostrar "extrato" de despesas;
-1. Calcular total de Despesas;
-1. Excluir Despesas;
-1. Editar Despesas;
-1. Filtrar Despesas;
+1. Calcular total de despesas;
+1. Excluir despesas;
+1. Editar despesas;
+1. Filtrar despesas;
 1. Salvar no LocalStorage - ainda não aprendi arquitetar um DB;
 1. _Outros conforme surge ideias_ ;
 
@@ -80,6 +80,15 @@ Eu vou levantar os requisitos funcionais, fazer brainstorm de ideias, criar um q
     - No desktop mostrar uma tabela com as despesas;
     
     [Quadro do RF03](https://trello.com/b/As4g7nbf)
+    
+### RF04 - Calcular total de despesas
+
+- O que é preciso pra atingir o objetivo do requisito:
+    - Calcular os valores de todas as despesas salvas na chave `expense`;
+    - Criar um componente Total pra mostrar de forma destacada o total;
+    - Alimentar o componente Total com o valor calculado das despesas;
+    
+    [Quadro do RF04](https://trello.com/b/As4g7nbf)
 
 ## Estilização da aplicação
 
