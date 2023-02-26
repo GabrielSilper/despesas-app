@@ -10,7 +10,7 @@ function MobileExpenseForm() {
       </label>
       <label htmlFor="">
         <span>Valor</span>
-        <input type="text" />
+        <input type="number" />
       </label>
       <label htmlFor="">
         <span>Tipo</span>
