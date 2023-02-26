@@ -26,7 +26,7 @@ Eu vou levantar os requisitos funcionais, fazer brainstorm de ideias, criar um q
 
 - ID - gerado automaticamente - `string`;
 - Nome da Despesa - `string`;
-- Tipo da Despesas - `[Conta, Trabalho, Comida, ..., Lazer]`; 
+- Tipo da Despesas - `[Conta, Cartão, Trabalho, Comida, ..., Lazer]`;
 - Descrição - `string`;
 - Valor - `number`;
 - Data de criaçào ou data da despesa* - `date`;
