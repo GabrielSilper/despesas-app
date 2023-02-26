@@ -1,12 +1,14 @@
 import PropTypes from 'prop-types';
 import React, { useCallback, useMemo, useState } from 'react';
 import currentDate from '../helpers/currentDate';
+import randomId from '../helpers/randomId';
 import ExpenseContext from './ExpenseContext';
 
 function ExpenseProvider({ children }) {
   const [fullName, setFullName] = useState('Faça Login');
   const [expenses, setExpenses] = useState([]);
   const [expense, setExpense] = useState({
+    id: randomId,
     name: '',
     value: '',
     type: '',
