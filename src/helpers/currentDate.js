@@ -1,17 +1,18 @@
-const newDate = Date.now();
-const today = new Date(newDate);
+const currentDate = () => {
+  const newDate = Date.now();
+  const today = new Date(newDate);
 
-const formattedDate = (date) => {
-  const numFormat = { date: 10, month: 8 };
-  const dd = date.getDate() > numFormat.date ? date.getDate() : `0${date.getDate()}`;
-  const mm = date.getMonth() > numFormat.month
-    ? date.getMonth() + 1
-    : `0${date.getMonth() + 1}`;
-  const yy = date.getFullYear();
+  const numFormat = { dayRequired: 10, monthRequired: 8 };
+
+  const dd = today.getDate() > numFormat.dayRequired
+    ? today.getDate()
+    : `0${today.getDate()}`;
+  const mm = today.getMonth() > numFormat.monthRequired
+    ? today.getMonth() + 1
+    : `0${today.getMonth() + 1}`;
+  const yy = today.getFullYear();
 
   return `${yy}-${mm}-${dd}`;
 };
-
-const currentDate = formattedDate(today);
 
 export default currentDate;
