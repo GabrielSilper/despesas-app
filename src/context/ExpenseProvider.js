@@ -1,19 +1,19 @@
-import PropTypes from 'prop-types';
-import React, { useCallback, useMemo, useState } from 'react';
-import currentDate from '../helpers/currentDate';
-import randomId from '../helpers/randomId';
-import ExpenseContext from './ExpenseContext';
+import PropTypes from "prop-types";
+import React, { useCallback, useEffect, useMemo, useState } from "react";
+import currentDate from "../helpers/currentDate";
+import randomId from "../helpers/randomId";
+import ExpenseContext from "./ExpenseContext";
 
 function ExpenseProvider({ children }) {
-  const [fullName, setFullName] = useState('Faça Login');
+  const [fullName, setFullName] = useState("Faça Login");
   const [expenses, setExpenses] = useState([]);
   const [expense, setExpense] = useState({
     id: randomId,
-    name: '',
-    value: '',
-    type: '',
+    name: "",
+    value: "",
+    type: "",
     date: currentDate,
-    description: '',
+    description: "",
   });
 
   const { name, value, type } = expense;
@@ -25,12 +25,17 @@ function ExpenseProvider({ children }) {
         [inputName]: inputValue,
       });
     },
-    [expense],
+    [expense]
+  );
+
+  const calculateTotal = useCallback(
+    () => console.log(expenses.map((item) => item.value)),
+    [expenses]
   );
 
   const expenseValidation = useCallback(() => {
     const nameOk = name.length < 1;
-    const valueOk = value.length === 0 || value === '0';
+    const valueOk = value.length === 0 || value === "0";
     const typeOk = type.length === 0;
     return nameOk || valueOk || typeOk;
   }, [name.length, value, type.length]);
@@ -38,13 +43,14 @@ function ExpenseProvider({ children }) {
   const addExpense = useCallback(() => {
     setExpenses([...expenses, expense]);
     setExpense({
-      name: '',
-      value: '',
-      type: '',
+      name: "",
+      value: "",
+      type: "",
       date: currentDate,
-      description: '',
+      description: "",
     });
-  }, [expense, expenses]);
+    calculateTotal();
+  }, [expense, expenses, calculateTotal]);
 
   const values = useMemo(
     () => ({
@@ -65,11 +71,11 @@ function ExpenseProvider({ children }) {
       changeExpenseProperty,
       expenseValidation,
       addExpense,
-    ],
+    ]
   );
 
   return (
-    <ExpenseContext.Provider value={ values }>{children}</ExpenseContext.Provider>
+    <ExpenseContext.Provider value={values}>{children}</ExpenseContext.Provider>
   );
 }
 
