@@ -44,6 +44,11 @@ Eu vou levantar os requisitos funcionais, fazer brainstorm de ideias, criar um q
 1. Salvar no LocalStorage - ainda não aprendi arquitetar um DB;
 1. _Outros conforme surge ideias_ ;
 
+## Levantamento de Requisitos Não Funcionais:
+
+1. Ter um deploy do projeto no GitHub Pages.
+1. _Outros conforme surge ideias_ ;
+
 ## Metodologia e estudos
 
 - Uso do Kanban usando a plataforma Trello para organização;
