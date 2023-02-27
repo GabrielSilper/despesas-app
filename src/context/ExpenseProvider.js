@@ -1,13 +1,13 @@
-import PropTypes from "prop-types";
-import React, { useCallback, useEffect, useMemo, useState } from "react";
-import randomId from "../helpers/randomId";
-import currentDate from "../helpers/currentDate";
-import ExpenseContext from "./ExpenseContext";
+import PropTypes from 'prop-types';
+import React, { useCallback, useEffect, useMemo, useState } from 'react';
+import randomId from '../helpers/randomId';
+import currentDate from '../helpers/currentDate';
+import ExpenseContext from './ExpenseContext';
 import {
   addExpenseToLocal,
   getExpensesInfo,
   getUser,
-} from "../helpers/nameLocal";
+} from '../helpers/nameLocal';
 
 function ExpenseProvider({ children }) {
   const [fullName, setFullName] = useState(getUser());
@@ -15,11 +15,11 @@ function ExpenseProvider({ children }) {
   const [total, setTotal] = useState(0);
   const [expense, setExpense] = useState({
     id: randomId(),
-    name: "",
-    value: "",
-    type: "",
+    name: '',
+    value: '',
+    type: '',
     date: currentDate(),
-    description: "",
+    description: '',
   });
   const { name, value, type } = expense;
 
@@ -31,26 +31,25 @@ function ExpenseProvider({ children }) {
         [inputName]: inputValue,
       });
     },
-    [expense]
+    [expense],
   );
 
   // Função para validar que os campos nome, tipo e valor foram preenchidos e aplicar na propriedade disabled do botão para habiltar.
   const expenseValidation = useCallback(() => {
     const nameOk = name.length < 2;
-    const valueOk = value.length === 0 || value === "0";
+    const valueOk = value.length === 0 || value === '0';
     const typeOk = type.length === 0;
     return nameOk || valueOk || typeOk;
   }, [name.length, value, type.length]);
 
   // UseEffect pra calcular o total
   useEffect(() => {
-    const calculateTotal = () =>
-      expenses
-        .map((curExpense) => Number(curExpense.value))
-        .reduce((acc, cur) => {
-          acc += cur;
-          return acc;
-        }, 0);
+    const calculateTotal = () => expenses
+      .map((curExpense) => Number(curExpense.value))
+      .reduce((acc, cur) => {
+        acc += cur;
+        return acc;
+      }, 0);
     setTotal(calculateTotal());
   }, [expenses]);
 
@@ -60,11 +59,11 @@ function ExpenseProvider({ children }) {
     setExpenses([...expenses, expense]);
     setExpense({
       id: randomId(),
-      name: "",
-      value: "",
-      type: "",
+      name: '',
+      value: '',
+      type: '',
       date: currentDate(),
-      description: "",
+      description: '',
     });
   }, [expense, expenses, fullName]);
   // const addExpense = useCallback(() => {}, []);
@@ -91,11 +90,11 @@ function ExpenseProvider({ children }) {
       addExpense,
       changeExpenseProperty,
       expenseValidation,
-    ]
+    ],
   );
 
   return (
-    <ExpenseContext.Provider value={values}>{children}</ExpenseContext.Provider>
+    <ExpenseContext.Provider value={ values }>{children}</ExpenseContext.Provider>
   );
 }
 
