@@ -1,0 +1,10 @@
+{
+  "files": {
+    "main.js": "/despesas-app/static/js/main.2a22d60d.js",
+    "index.html": "/despesas-app/index.html",
+    "main.2a22d60d.js.map": "/despesas-app/static/js/main.2a22d60d.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.2a22d60d.js"
+  ]
+}
