@@ -6,6 +6,7 @@ import BtnLogin from '../style/LoginStyled/BtnLogin';
 import InputNameLogin from '../style/LoginStyled/InputNameLogin';
 import LabelLogin from '../style/LoginStyled/LabelLogin';
 import SFormLogin from '../style/LoginStyled/SFormLogin';
+import { createExpenseInfo, createUser } from '../helpers/nameLocal';
 
 function FormLogin() {
   const [loginName, setLoginName] = useState('');
@@ -18,6 +19,8 @@ function FormLogin() {
 
   const handleClick = () => {
     setFullName(loginName);
+    createUser(loginName);
+    createExpenseInfo(loginName);
     history.push('/expenses');
   };
 
