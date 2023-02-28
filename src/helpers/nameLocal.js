@@ -1,7 +1,4 @@
 export const createUser = (name) => {
-  if (localStorage.getItem('user')) {
-    return;
-  }
   localStorage.setItem('user', name);
 };
 
@@ -25,7 +22,7 @@ export const addExpenseToLocal = (name, expense) => {
     if (localExpenses.length === 0) {
       localStorage.setItem(name, JSON.stringify([expense]));
     } else {
-      localStorage.setItem(name, JSON.stringify([localExpenses, ...expense]));
+      localStorage.setItem(name, JSON.stringify([...localExpenses, expense]));
     }
   }
 };
