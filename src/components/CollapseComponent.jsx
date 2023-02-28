@@ -14,7 +14,8 @@ import formattedDate from '../helpers/formattedDate';
 function CollapseComponent({ expense }) {
   const { name, value, type, date, description } = expense;
   const formattedValue = Number(value).toFixed(2).replace('.', ',');
-  const dateProp = new Date(date);
+  const dateProps = new Date(date);
+  dateProps.setDate(dateProps.getDate() + 1);
   const [show, setShow] = useState(false);
 
   const icon = ((theType) => {
@@ -39,7 +40,7 @@ function CollapseComponent({ expense }) {
   const bodyElement = (
     <BodyCollapse>
       <span>{icon}</span>
-      <span>{formattedDate(dateProp)}</span>
+      <span>{formattedDate(dateProps)}</span>
       <span>{description}</span>
     </BodyCollapse>
   );
