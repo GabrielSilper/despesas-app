@@ -1,9 +1,9 @@
-import React from "react";
-import Header from "../components/Header";
-import BtnLogin from "../style/LoginStyled/BtnLogin";
-import InputNameLogin from "../style/LoginStyled/InputNameLogin";
-import LabelLogin from "../style/LoginStyled/LabelLogin";
-import SFormLogin from "../style/LoginStyled/SFormLogin";
+import React from 'react';
+import Header from '../components/Header';
+import BtnLogin from '../style/LoginStyled/BtnLogin';
+import InputNameLogin from '../style/LoginStyled/InputNameLogin';
+import LabelLogin from '../style/LoginStyled/LabelLogin';
+import SFormLogin from '../style/LoginStyled/SFormLogin';
 
 function Login() {
   return (
