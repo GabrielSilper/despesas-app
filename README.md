@@ -1,8 +1,8 @@
 # Despesas App
 
-Sempre gostei de calcular minhas despesas para que não houvesse surpresas no fim do mês e controlar meus gastos.
+Sempre gostei de calcular minhas despesas para que não houvesse surpresas no fim do mês e poder controlar meus gastos.
 
-E após concluir o projeto TrybeWallet, me surgiu a ideia de mudar um pouco o funcionamento do projeto, reiniciar do zero tudo, e simular um planejamento de projeto como fiz em um projeto chamado de Company App que está em andamento.
+E após concluir o projeto TrybeWallet, me surgiu a ideia de mudar um pouco o funcionamento do projeto, reiniciar do zero tudo, e simular um planejamento de projeto do zero.
 
 Eu vou levantar os requisitos funcionais, fazer brainstorm de ideias, criar um quadro Kanban e fazer "sprints".
 
